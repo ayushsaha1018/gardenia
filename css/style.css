@@ -451,9 +451,105 @@ section {
   opacity: 0.6;
 }
 
+.social_impact .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_impact .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 2rem;
+}
+
+/* card css  starts*/
+.card {
+  border-radius: 5px;
+  width: 25rem;
+  border-radius: 20px;
+}
+.color {
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  height: 40%;
+  width: 100%;
+  padding: 1rem 7rem;
+}
+.card .color .num {
+  border-radius: 50%;
+  text-align: center;
+  transform: translateY(40%);
+  padding: 2rem;
+  color: white;
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.si_content {
+  padding: 2.5rem 2rem;
+  gap: 1rem;
+  text-align: center;
+  box-shadow: 2px 2px 15px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 20px 20px;
+}
+.si_content h2 {
+  color: rgb(248, 86, 113);
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 1000;
+}
+.si_content p {
+  font-size: 1.8rem;
+  color: gray;
+  font-weight: 500;
+}
+.bulb {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
+/* card css  ends*/
+
+.social_impact .red {
+  background-color: #ff5969;
+}
+
+.social_impact .red_h2 {
+  color: #ff5969;
+}
+
+.social_impact .green {
+  background-color: #52cbbe;
+}
+
+.social_impact .green_h2 {
+  color: #52cbbe;
+}
+
+.social_impact .yellow {
+  background-color: #fec630;
+}
+
+.social_impact .yellow_h2 {
+  color: #fec630;
+}
+
+.work_process {
+  background-color: var(--light-bg);
+}
+
+.work_process p {
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 0 9rem;
+  opacity: 0.6;
+}
+
 .competition .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 2rem;
 }
 
@@ -468,8 +564,13 @@ section {
 
 .warehousing .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1rem;
+}
+
+.warehousing .warehouse{
+  height: 50rem;
+  border-radius: 5px;
 }
 
 .warehousing p {
@@ -488,6 +589,10 @@ section {
 
 .warehousing .three {
   color: #ffa956;
+}
+
+.vegetables {
+  background-color: var(--light-bg);
 }
 
 .vegetables .box-container {
@@ -540,50 +645,223 @@ section {
 }
 /* img box ends  */
 
-.vegetables .tomato{
+.vegetables .tomato {
   background-color: #ff5969;
 }
 
-.vegetables .tomato_img{
+.vegetables .tomato_img {
   border: 12px solid #ff5969;
 }
 
-.vegetables .potato{
-  background-color: #00A0A8;
+.vegetables .potato {
+  background-color: #00a0a8;
 }
 
-.vegetables .potato_img{
-  border: 12px solid #00A0A8;
+.vegetables .potato_img {
+  border: 12px solid #00a0a8;
 }
 
-.vegetables .onion{
-  background-color: #5D7373;
+.vegetables .onion {
+  background-color: #5d7373;
 }
 
-.vegetables .onion_img{
-  border: 12px solid #5D7373;
+.vegetables .onion_img {
+  border: 12px solid #5d7373;
 }
 
-.vegetables .carrot{
+.vegetables .carrot {
   background-color: #ff5969;
 }
 
-.vegetables .carrot_img{
-  border: 12px solid #ED7D31;
+.vegetables .carrot_img {
+  border: 12px solid #ed7d31;
 }
 
-.vegetables .eggplant{
-  background-color: #00A0A8;
+.vegetables .eggplant {
+  background-color: #00a0a8;
 }
 
-.vegetables .eggplant_img{
-  border: 12px solid #7030A0;
+.vegetables .eggplant_img {
+  border: 12px solid #7030a0;
 }
 
-.vegetables .cauliflower{
-  background-color: #5D7373;
+.vegetables .cauliflower {
+  background-color: #5d7373;
 }
 
-.vegetables .cauliflower_img{
-  border: 12px solid #7F7F7F;
+.vegetables .cauliflower_img {
+  border: 12px solid #7f7f7f;
+}
+
+.startup {
+  background-color: var(--light-bg);
+}
+
+.startup .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 2rem;
+}
+
+.startup p {
+  color: #7a7c7f;
+  font-size: 2.4rem;
+}
+
+.startup h2 {
+  font-size: 2.4rem;
+}
+
+.startup .startup_sub {
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.cost_st .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 2rem;
+}
+
+.cost_st p {
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: #7a7c7f;
+}
+
+.cost_st ol {
+  list-style-type: upper-alpha;
+  font-size: 2.4rem;
+  color: #7a7c7f;
+}
+
+.cost_st h2 {
+  font-size: 2.4rem;
+}
+
+.total_cost {
+  text-align: center;
+}
+
+.selling_cost {
+  background-color: var(--light-bg);
+}
+
+.selling_cost p {
+  font-size: 2rem;
+  color: #7a7c7f;
+  text-align: center;
+}
+
+.selling_cost h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.selling_cost table {
+  font-size: 2rem;
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 2px solid white;
+  padding: 1rem;
+}
+
+.selling_cost th {
+  background-color: #4472c4;
+  color: white;
+}
+
+.selling_cost .light_bg td {
+  background-color: #e9ebf5;
+  font-weight: 500;
+}
+
+.selling_cost .bg td {
+  background-color: #cfd5ea;
+  font-weight: 500;
+}
+
+.selling_cost .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 7rem;
+}
+
+@media (min-width: 990px) {
+  .cost-breakup {
+    padding-top: 12rem;
+  }
+}
+
+.selling_cost .disc {
+  padding-top: 3rem;
+}
+
+.subscription h3 {
+  font-size: 2.4rem;
+  color: #7f7f82;
+  padding: 2rem;
+}
+
+.subscription {
+  text-decoration: underline;
+}
+
+.subscription ul {
+  font-size: 2rem;
+  color: #a7a6a6;
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.future {
+  background-color: var(--light-bg);
+}
+
+.future .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  gap: 3rem;
+}
+
+.future .box {
+  text-align: center;
+}
+
+.future img {
+  height: 25rem;
+}
+
+.future h3 {
+  font-size: 3.3rem;
+  font-weight: 700;
+}
+
+.future h2 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.future p {
+  font-size: 2rem;
+}
+
+.future .red {
+  color: #ff5969;
+}
+
+.future .blue {
+  color: #52cbbe;
+}
+
+.future .yellow {
+  color: #fec630;
 }
